@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "algoriq"
+version = "0.1.0"
+description = ""
+authors = ["Igor Gerasimov <gerasimov.igor.98@icloud.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiogram = "^3.4.1"
+python-dotenv = "^1.0.1"
+requests = "^2.31.0"
+sqlalchemy = "^2.0.29"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
