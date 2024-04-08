@@ -17,7 +17,7 @@ API_TOKEN = os.environ.get('API_TOKEN')
 print(API_TOKEN)
 # Инициализация бота и диспетчера
 # bot = Bot(token=API_TOKEN)
-bot = telebot.TeleBot(API_TOKEN, parse_mode='MarkdownV2')
+bot = telebot.TeleBot(API_TOKEN, parse_mode='Markdown')
 # print(bot)
 # dp = Dispatcher(storage=MemoryStorage())
 
