@@ -707,6 +707,32 @@ files = [
 typing-extensions = ">=4.6.0,<4.7.0 || >4.7.0"
 
 [[package]]
+name = "pytelegrambotapi"
+version = "4.16.1"
+description = "Python Telegram bot api."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "pytelegrambotapi-4.16.1-py3-none-any.whl", hash = "sha256:85451b4fa1a47d99318a50aef361d177d2eb580c5ea6429fadb071cfad17fb35"},
+    {file = "pytelegrambotapi-4.16.1.tar.gz", hash = "sha256:7ecfdac60de4a4c254059fc0f1997ceeb5da72803ffe4f35544b3ec9e9629edb"},
+]
+
+[package.dependencies]
+requests = "*"
+
+[package.extras]
+aiohttp = ["aiohttp"]
+aioredis = ["aioredis"]
+coloredlogs = ["coloredlogs"]
+fastapi = ["fastapi"]
+json = ["ujson"]
+pil = ["pillow"]
+psutil = ["psutil"]
+redis = ["redis (>=3.4.1)"]
+uvicorn = ["uvicorn"]
+watchdog = ["watchdog"]
+
+[[package]]
 name = "python-dotenv"
 version = "1.0.1"
 description = "Read key-value pairs from a .env file and set them as environment variables"
@@ -827,6 +853,21 @@ postgresql-psycopg2cffi = ["psycopg2cffi"]
 postgresql-psycopgbinary = ["psycopg[binary] (>=3.0.7)"]
 pymysql = ["pymysql"]
 sqlcipher = ["sqlcipher3_binary"]
+
+[[package]]
+name = "telebot"
+version = "0.0.5"
+description = "A Telegram bot library, with simple route decorators."
+optional = false
+python-versions = "*"
+files = [
+    {file = "telebot-0.0.5-py3-none-any.whl", hash = "sha256:50327c240243480d40ade4ea5bea4f464bf57d4ff000ea669fcd705396074863"},
+    {file = "telebot-0.0.5.tar.gz", hash = "sha256:848a5885b57247b65edd0e92647b4372ebd8d41611dca3f344788c11deac2571"},
+]
+
+[package.dependencies]
+pyTelegramBotAPI = "*"
+requests = "*"
 
 [[package]]
 name = "typing-extensions"
@@ -962,4 +1003,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "03f804c1ddcf0cc60e411ebf56c5d42d403ac1a9199dc0a4996c4538d32a0c18"
+content-hash = "b7da07db2d046cf947ca7ee00002fa809e3bdd66333a88aeccae13698d593a05"
