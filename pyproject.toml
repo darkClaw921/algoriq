@@ -12,6 +12,7 @@ python-dotenv = "^1.0.1"
 requests = "^2.31.0"
 sqlalchemy = "^2.0.29"
 telebot = "^0.0.5"
+openai = "^1.17.0"
 
 
 [build-system]

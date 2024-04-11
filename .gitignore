@@ -41,6 +41,8 @@ wheels/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
+*.mp4
+*.db
 *.egg
 MANIFEST
 
