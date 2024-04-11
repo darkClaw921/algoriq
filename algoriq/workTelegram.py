@@ -126,7 +126,7 @@ def handle_email_response(message: types.Message):
     chatID=message.chat.id
     email = message.text.strip()
     # create_hubspot_lead(email)
-    bot.send_message(chatID,"Спасибо за ваш email! Ваш лид успешно создан в HubSpot.")
+    # bot.send_message(chatID,"Спасибо за ваш email! Ваш лид успешно создан в HubSpot.")
 
     keyboard = InlineKeyboardMarkup()
     keyboard.add(
