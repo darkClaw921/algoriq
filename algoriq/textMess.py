@@ -20,22 +20,17 @@ textVideoGuide="""
 urlMessage="""Тут мы собрали ключевые ссылки, которые тебе нужны.
 
 🎓 Обучение и как работает продукт
-1. [Структура продукта](https://docs.google.com/document/d/1o5E)
-2. Как устроена гипотеза
-3. Что можно и нельзя делать
-
-👀 Подсказки и примеры
-1. Как заполнить бриф о Компании
-2. Как заполнить бриф о Продукте
-3. Как правильно настроить создание гипотез
-4. Разбор результатов примера
+1. [Структура продукта](https://docs.google.com/document/d/1f7SxS-EyGRfzC5JPCoi9q-CFN4_2eQSjiOc4rzloPT8)
+2. [Как заполнять брифы](https://docs.google.com/document/d/119yOiBniC3WijCgU8wMLgY0IxQY4r6KWIecuSjEGoFA)
+3. [Ответы на главные сомнения](https://docs.google.com/document/d/1AHKr9_vycsLwwDRpzDlV3LcEvUi1PhyJUv7sl4ez_QQ)
+4. Видео-гайд : https://youtu.be/CM5nsd1QlyM 
 
 🔗 Подпишись
-1. Instagram RU
-2. Instagram ENG
-3. Telegram
-4. LinkedIn
-5. YouTube"""
+Telegram: https://t.me/algoriq_ai
+Instagram (на русском): https://www.instagram.com/algoriq_cis/
+Instagram (на английском): https://www.instagram.com/algoriq.ai/
+LinkedIn: https://www.linkedin.com/company/algoriq/ 
+YouTube: https://www.youtube.com/@algoriq"""
 
 emailText="""
 Напиши свой имейл и ты получишь неограниченный доступ на две недели.
