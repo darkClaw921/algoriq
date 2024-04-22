@@ -75,7 +75,7 @@ def handle_watch_explainer(message: types.Message):
 @bot.callback_query_handler(func=lambda c: c.data == "watch_explainer_video")
 def watch_explainer_video(callback_query: types.CallbackQuery):
     keyboard = InlineKeyboardMarkup()
-    keyboard.add(InlineKeyboardButton(text="Пример результата", callback_data="watch_example"))
+    # keyboard.add(InlineKeyboardButton(text="Пример результата", callback_data="watch_example"))
     keyboard.add(InlineKeyboardButton(text="Получить доступ", callback_data="provide_email"))
     # bot.send_video(callback_query.message.chat.id, video=open('explainer_video.mp4', 'rb'))
     bot.send_message(callback_query.message.chat.id,"""Если ты не хочешь разбираться на ходу, а сразу использовать 😎 на максимум, то посмотри наше видео-обнординг, где наглядно и подробно разобраны все нюансы! \nhttps://youtu.be/CM5nsd1QlyM""", reply_markup=keyboard)
