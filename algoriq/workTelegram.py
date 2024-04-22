@@ -14,6 +14,7 @@ import textMess
 from dotenv import load_dotenv
 import os
 load_dotenv()
+from workGS import Sheet
 
 API_TOKEN = os.environ.get('API_TOKEN')
 print(API_TOKEN)
@@ -27,7 +28,7 @@ bot = telebot.TeleBot(API_TOKEN, parse_mode='Markdown')
 
 # Хранилище состояний пользователей
 states = {}
-
+sheet = Sheet('profzaboru-5f6f677a3cd8.json','algoriq-email',)
 
 # Обработчик бизнес-соединений
 # @bot.business_connection_handler(func=lambda business_connection: True)
@@ -127,6 +128,7 @@ def handle_email_response(message: types.Message):
     chatID=message.chat.id
     email = message.text.strip()
     # create_hubspot_lead(email)
+    sheet.insert_cell([email])
     # bot.send_message(chatID,"Спасибо за ваш email! Ваш лид успешно создан в HubSpot.")
 
     keyboard = InlineKeyboardMarkup()
