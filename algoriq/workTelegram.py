@@ -96,8 +96,9 @@ def handle_watch_example(message: types.CallbackQuery):
     keyboard = InlineKeyboardMarkup()
     keyboard.add(InlineKeyboardButton(text="Получить доступ", callback_data="provide_email"))
     bot.send_video(chatID, video=open('test.mp4', 'rb'),reply_markup=keyboard)
-    states[chatID] = "urls_message"
+    states[chatID] = "urls_message1"
     bot.answer_callback_query(message.id)
+    handle_email_response(message)
     # handle_provide_email(message)
 
 
@@ -126,9 +127,9 @@ def handle_awaiting_email(message: types.CallbackQuery):
 @bot.message_handler(func=lambda message: states.get(message.chat.id) == "awaiting_email")
 def handle_email_response(message: types.Message):
     chatID=message.chat.id
-    email = message.text.strip()
+    # email = message.text.strip()
     # create_hubspot_lead(email)
-    sheet.insert_cell([email])
+    # sheet.insert_cell([email])
     # bot.send_message(chatID,"Спасибо за ваш email! Ваш лид успешно создан в HubSpot.")
 
     keyboard = InlineKeyboardMarkup()
