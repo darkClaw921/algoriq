@@ -144,6 +144,7 @@ def handle_email_response(message: types.Message):
         # InlineKeyboardButton(text="☎️ Связаться с нами", url=''
         # InlineKeyboardButton(text="🎓 Информация и обучение", callback_data="info_and_training")
     )
+    bot.answer_callback_query(message.id)
     #message.send_message(chatID,"Ссылка на наш продукт: [Название продукта](http://example.com)", reply_markup=keyboard)
     bot.send_message(chatID,textMess.endText, reply_markup=keyboard)
 
