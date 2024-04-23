@@ -115,7 +115,7 @@ def handle_provide_email(message: types.CallbackQuery):
     handle_awaiting_email(message) 
 
 
-@bot.callback_query_handler(func=lambda c: c.data == "provide_email")
+@bot.callback_query_handler(func=lambda c: c.data == "provide_email123")
 def handle_awaiting_email(message: types.CallbackQuery):
     chatID=message.message.chat.id
     bot.answer_callback_query(message.id)
@@ -124,9 +124,12 @@ def handle_awaiting_email(message: types.CallbackQuery):
     # handle_email_response(message) 
 
 
-@bot.message_handler(func=lambda message: states.get(message.chat.id) == "awaiting_email")
+# @bot.message_handler(func=lambda message: states.get(message.chat.id) == "awaiting_email")
+# @bot.message_handler(func=lambda message: states.get(message.chat.id) == "awaiting_email")
+@bot.callback_query_handler(func=lambda c: c.data == "provide_email")
 def handle_email_response(message: types.Message):
-    chatID=message.chat.id
+    # chatID=message.chat.id
+    chatID=message.message.chat.id
     # email = message.text.strip()
     # create_hubspot_lead(email)
     # sheet.insert_cell([email])
