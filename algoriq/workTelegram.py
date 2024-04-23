@@ -156,7 +156,7 @@ def handle_feedback(callback_query: types.CallbackQuery):
     keyboard.add(
         InlineKeyboardButton(text="🔝 Предложить улучшение работы AlgoriQ", url='https://t.me/m/9BaYmNnXZjc1'))
     keyboard.add(
-        InlineKeyboardButton(text="⚙️ Предложить улучшение использования", url='https://t.me/m/_-0QzNy2NzBl',))
+        InlineKeyboardButton(text="⚙️ Предложить улучшение использования", url='https://t.me/m/DHOx4gK4NjY1',))
     keyboard.add(
         InlineKeyboardButton(text="🚨 Сообщить об ошибке", url='https://t.me/m/DS1FAx5DZmJl',))
     bot.send_message(callback_query.message.chat.id, "Вы выбрали '🔄 Дать фидбек по продукту'.", reply_markup=keyboard)
