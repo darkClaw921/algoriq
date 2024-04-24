@@ -45,7 +45,8 @@ def handle_start_button(message: types.Message):
 
     keyboard = InlineKeyboardMarkup()
     
-    keyboard.add(InlineKeyboardButton(text="Смотреть обучение", callback_data="watch_circle"))
+    # keyboard.add(InlineKeyboardButton(text="Смотреть обучение", callback_data="watch_circle"))
+    keyboard.add(InlineKeyboardButton(text="Смотреть обучение", callback_data="watch_explainer_video"))
     # keyboard = ReplyKeyboardMarkup()
     # keyboard.add(KeyboardButton('Смотреть обучение'))
         # InlineKeyboardButton(text="🔄 Дать фидбек по продукту", callback_data="feedback"),)
